@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="he">
+    <head>
+        <title>My Shop!</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css"/>
+        
+    </head>
+    <body>
+        <header>
+            <div class="title">ShoppingList</div>
+        </header>
+        <div class="container">
+            <div id="error">Error item name require</div>
+            <div class="itemBlock">
+                <div class="title">ADD YOUR ITEMS HEAR</div>
+                <div class="content">
+                    <div id="cartAreaList">
+                        
+                    </div>
+                    <div class="field2">
+                        <input type="text" name="addMore" id="addMore" placeholder="Add Item" />
+                    </div>
+                </div>
+            </div>
+            <div class="detailsBlock">
+                <div class="title">BREAD DETAILS</div>
+                <div class="content">
+                    <div class="formDetails">
+                        <div class="fieldD">
+                            <label for="quantity">Quantity</label>
+                            <input type="text" name="quantity" id="quantity" />
+                        </div>
+                        <div class="fieldD">
+                            <label for="price">Price</label>
+                            <input type="text" name="price" id="price" />
+                        </div>
+                        <div class="fieldD">
+                            <label for="description">Description</label>
+                            <textarea name="description" id="description"></textarea>
+                        </div>
+                        <input type="hidden" id="nowEdit" />
+                    </div>
+                </div>
+            </div>
+            
+         
+        </div>
+        
+        <script src="js/jquery-2.2.4.min.js"></script>
+        <script src="js/myApp.js"></script>
+    </body>
+</html>

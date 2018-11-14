@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+header {
+    width: 100%;
+    height: 65px;
+    
+    
+  background-image: linear-gradient(rgba(0,229,145,1), rgba(47,239,188,1));
+}
+
+header .title {
+    color: #FFFFFF;
+    font-size: 25px;
+    height: 65px;
+    line-height: 65px;
+    padding-left: 15px;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 145px;
+}
+
+.container .itemBlock {
+    float: left;
+    width: 100%;
+    max-width: 300px;
+    overflow-y: auto;
+    max-height: 362px;
+}
+
+#error {
+    position: fixed;
+    top: 0;
+    right: 0;
+    max-width: 300px;
+    font-size: 20px;
+    width: 100%;
+    float: left;
+    border: 2px solid #DEDEDE;
+    padding: 5px;
+    margin-bottom: 5px;
+    background: red;
+    color: #FFFFFF;
+    display: none;
+}
+.container .detailsBlock {
+    display: none;
+    float: right;
+    width: 100%;
+    max-width: 485px;
+}
+
+.container .title {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    color: #FFFFFF;
+    padding-left: 15px;
+    background-image: linear-gradient(rgba(0,229,145,1), rgba(47,239,188,1));
+}
+
+.container .content {
+    width: 100%;
+    border: 1px solid #d2d2d2;
+    min-height: 320px;
+}
+
+.container .content .field {
+    width: 100%;
+    border-bottom: 1px solid #d2d2d2;
+    padding: 5px 0;
+    position: relative;
+    
+}
+
+.container .content .field .remove {
+    content: "x";
+    color: red;
+    font-size: 16px;
+    position: absolute;
+    right: 5px;
+    top: 0;
+    cursor: pointer;
+}
+
+.container .content .field input {
+    border: 0;
+    
+}
+.container .content .field2 #addMore {
+    width: 100%;
+    padding-left: 30px;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #d2d2d2;
+}
+
+.container .content .formDetails {
+    width: 90%;
+    margin: 0 auto;
+}
+.container .content .fieldD {
+    margin-top: 17px;
+}
+.container .content .formDetails .fieldD input {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.container .content .formDetails .fieldD textarea {
+    width: 100%;
+    height: 50px;
+    margin-top: 5px;
+}
+
+.container .content .field:last-child {
+    border-bottom: 0;
+}
+
+@media only screen and (max-width: 800px) {
+    .container .itemBlock {
+        float: none;
+        margin: 0 auto;
+     
+    }
+    .container .content {
+        min-height: 0;
+        padding-bottom: 20px;
+    }
+    .container .detailsBlock {
+        float: none;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    
+    .container { margin-top: 20px;}
+}
+
+@media only screen and (max-width: 500px) {
+    .container .detailsBlock {
+        max-width: 90%;
+    }
+}
